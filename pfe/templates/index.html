@@ -1,0 +1,80 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+     
+    
+</head>  
+<body>  
+  <div>
+    <center><a href="/espaceadmin/" class="btn btn-primary"><h1>Se connecter en tant que administrateur</h1></a></center>    </div>
+<form method="POST" class="post-form" action="">  
+        {% csrf_token %}  
+    <div class="container">  
+<br>  
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <h3>Déposer votre candidature</h3>  
+    </div>  
+  </div>  
+    
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Candidat Name:</label>  
+    <div class="col-sm-4">  
+      {{ form.nom }}  
+    </div>  
+  </div> 
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Candidat Prénom:</label>  
+    <div class="col-sm-4">  
+      {{ form.prenom }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Candidat E-mail:</label>  
+    <div class="col-sm-4">  
+      {{ form.e_mail }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Date de naissance:</label>  
+    <div class="col-sm-4">  
+      {{ form.date_naissance}}  
+    </div>  
+  </div>  
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Numéro de téléphone:</label>  
+    <div class="col-sm-4">  
+      {{ form.num_tel }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Disponibilité:</label>  
+    <div class="col-sm-4">  
+      {{ form.dispo }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Nombre d'année d'expérience:</label>  
+    <div class="col-sm-4">  
+      {{ form.nb_ann_exp }}  
+    </div>  
+  </div>
+  <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Message:</label>  
+    <div class="col-sm-4">  
+      {{ form.msg }}  
+    </div>  
+  </div>
+    <div class="form-group row">  
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">  
+    <button type="submit" class="btn btn-primary">Submit</button>  
+    </div>  
+  </div>  
+    </div>  
+</form>  
+</body>  
+</html>  
